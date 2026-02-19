@@ -3,8 +3,8 @@ dist
 .env
 .env.local
 
-# Screenshots & logs
-*.png
+# Screenshots (root only) & logs
+/*.png
 *.log
 
 # Temp directories
