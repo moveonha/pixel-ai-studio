@@ -1,41 +1,32 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+node_modules
+dist
+.env
+.env.local
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Screenshots & logs
+*.png
+*.log
 
-# testing
-/coverage
+# Temp directories
+temp_skyoffice/
 
-# next.js
-/.next/
-/out/
+# IDE & tools
+.vscode/
+.playwright-mcp/
 
-# production
-/build
+# Tauri build artifacts
+src-tauri/target/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Claude Code generated files
+.claude/brainstorms/
+.claude/crawler/
+.claude/first-principles/
+.claude/genius-ideas/
+.claude/plan/
+.claude/plans/
+.claude/ralph/
+.claude/refactor/
+.claude/prd/
+.claude/research/
+.claude/validation-results/
+.codex/

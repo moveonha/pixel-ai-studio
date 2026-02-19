@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(done)",
+      "WebFetch(domain:demodev-video-studio.vercel.app)",
+      "Bash(npm run build:*)",
+      "Skill(pre-deploy)",
+      "Bash(npx tsc:*)",
+      "Bash(cargo check:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/session-env-setup.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
